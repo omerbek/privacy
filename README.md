@@ -1,5 +1,5 @@
 # privacy
-Privacy Policies for Kubru Labs Mobile Apps
+Privacy Policies for Kumru Labs Mobile Apps
 
 ## Play review video
 
