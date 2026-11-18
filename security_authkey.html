@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Privacy Policy - AuthKey: 2FA TOTP Authenticator</title></head>
-<body style="font-family: sans-serif; padding: 24px; line-height: 1.6; color: #1e293b;">
-<h1>Privacy Policy for AuthKey: 2FA TOTP Authenticator</h1>
-<p>AuthKey: 2FA TOTP Authenticator operates as a 100% offline two-factor authentication vault. Your 2FA accounts and secret keys are stored in encrypted local memory on your device and are never transmitted to cloud servers.</p>
-<h2>1. Zero Cloud Sync</h2>
-<p>No remote servers are contacted. Verification codes are computed strictly on-device using the RFC 6238 standard.</p>
-<h2>2. Advertising</h2>
-<p>Non-intrusive banner ads are provided via Google AdMob SDK.</p>
-<h2>3. Contact</h2>
-<p>Email: omersukrubektas@gmail.com</p>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | AuthKey</title>
+<style>body{font-family:system-ui,sans-serif;line-height:1.7;max-width:800px;margin:auto;padding:24px;color:#333}h1,h2{color:#163d36}li{margin-bottom:8px}</style>
+</head>
+<body>
+<main>
+<h1>AuthKey Privacy Policy</h1>
+<p><strong>App:</strong> AuthKey (Android: com.security.authkey)<br><strong>Last updated:</strong> 18 November 2026<br><strong>Privacy contact:</strong> <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a></p>
+<h2>1. Local authenticator data</h2>
+<p>AuthKey generates time-based one-time passwords (TOTP) on your device using your device clock. There is no AuthKey account, cloud synchronization, secret-upload endpoint or backup/recovery service. The app does not upload OTP secrets, setup URIs, account labels or generated codes to the developer or include them as fields in advertising requests. Core authenticator functions work offline; the entire app is not exclusively offline because Google advertising and consent services use network connections.</p>
+<p>Saved accounts contain an identifier, issuer/service label, account label, Base32 secret, algorithm, digit count and period. They are stored through platform-protected secure storage under <code>authkey_accounts_v1</code>. The cosmetic Support-heart count is stored separately under <code>authkey_support_hearts_v1</code>. These records have no scheduled expiry. Platform-protected storage is not a guarantee of hardware-backed or biometric-bound encryption, and the app does not provide a biometric lock.</p>
+<h2>2. Optional camera QR scanning</h2>
+<p>On Android, choosing <strong>Scan QR</strong> starts a separate scanner and requests camera permission if needed. Camera access is used only for this user-started setup scan. Preview frames are processed in memory and QR decoding runs on the device; AuthKey does not save camera photographs, upload frames or download a recognition model. A supported TOTP setup is parsed locally and shown for review before you explicitly save the account. Scanning does not silently enroll an account or replace a manual/pasted draft.</p>
+<p>Capture stops when you leave the scanner or the app is paused/backgrounded. Resuming requires an explicit retry to reopen the camera. You may cancel, deny or revoke camera permission in Android settings and use manual entry or paste a setup URI instead. Camera scanning is Android-only; unsupported or unreadable QR codes do not become accounts automatically.</p>
+<h2>3. Copying and device protection</h2>
+<p>Copying a code places it on the system clipboard at your request. Android marks copies sensitive and attempts conditional cleanup of its own copy; iOS uses a local-only expiring pasteboard. Cleanup is best effort and not guaranteed after process termination. Other apps or system features may access copies according to your platform settings. Deleting an account does not remove copies already pasted elsewhere.</p>
+<p>Android capture restrictions and background privacy covers reduce incidental exposure, but do not secure a compromised device. iOS screenshots are not universally blocked. Keep your device protected and retain each enrolling service's recovery codes separately. Never email secrets or setup QR codes for ordinary support.</p>
+<h2>4. Google advertising and consent</h2>
+<p>Google Mobile Ads (AdMob) supplies a separate Home banner and an optional rewarded-interstitial in Support. No OTP or account feature requires an advertisement. Support requires an affirmative choice; only the SDK's earned-reward callback saves a cosmetic heart, with acknowledgement after successful storage and ad dismissal. Loading, dismissing or clicking an ad alone does not earn a heart, and no ad click is requested.</p>
+<p>Google's User Messaging Platform (UMP) refreshes consent information, presents a required form where applicable and gates ad requests on eligibility. When required, Support provides <strong>Privacy choices</strong> to reopen Google's privacy form. Declining optional Support or an ad/consent failure does not block local authenticator tools.</p>
+<p>Google services may process device/advertising identifiers, IP address and approximate location inferred from it, app/device information, ad interactions, performance and diagnostic information, and privacy choices for advertising, measurement, fraud prevention and consent management. Actual processing depends on platform, region, settings and consent. This network processing is separate from local OTP computation and camera decoding; it must not be described as zero collection by the whole app.</p>
+<p>See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/ads">Google advertising information</a> and <a href="https://developers.google.com/admob/flutter/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a>. Provider retention and controls follow their policies. Deleting an AuthKey account or local app data does not delete information already held by Google or advertisers. Your operating system may also provide advertising-identifier controls.</p>
+<h2>5. Retention, deletion and backup limits</h2>
+<p>You can delete an individual authenticator account after confirmation. This removes its active local vault record; it does not disable two-factor authentication at the enrolling service. Arrange recovery or another authenticator with that service before deleting an account or device data. The developer cannot remotely retrieve, recover or erase secrets held only on your device.</p>
+<p>Android disables automatic app backup and excludes app data from Android backup/device-transfer rules. Android's Clear storage/app data control removes local app storage, including the vault and hearts. Device manufacturers, rooted devices or copies you make yourself may behave differently. iOS secure storage uses platform Keychain behavior; uninstalling alone is not a reliable guarantee of Keychain erasure. Delete accounts in the app before removal when possible. There is no in-app bulk reset, remote deletion API or guaranteed recovery after loss. Existing clipboard copies, service records and backups outside AuthKey must be managed with their respective providers.</p>
+<h2>6. Contact and changes</h2>
+<p>For privacy questions, email <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a> and identify AuthKey. Information you choose to email is handled by the recipient and email providers to respond to your request; do not include OTP secrets, codes, setup URIs or camera images unless you intentionally wish to disclose them. No storage or transfer method is completely secure. This policy may change as app behavior or service practices change; the date above identifies the current revision.</p>
+</main>
+</body>
+</html>
