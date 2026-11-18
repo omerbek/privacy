@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Privacy Policy - FocusDial: Pomodoro Work Timer</title></head>
-<body style="font-family: sans-serif; padding: 24px; line-height: 1.6; color: #1e293b;">
-<h1>Privacy Policy for FocusDial: Pomodoro Work Timer</h1>
-<p>Your privacy is important to us. FocusDial: Pomodoro Work Timer works entirely offline and stores your focus session records locally on your device.</p>
-<h2>1. Data Collection</h2>
-<p>We do not collect or upload your timer logs, personal habits, or device analytics to remote servers.</p>
-<h2>2. Advertisements</h2>
-<p>Non-intrusive banner ads are provided via Google AdMob SDK.</p>
-<h2>3. Contact</h2>
-<p>Email: omersukrubektas@gmail.com</p>
-</body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | FocusDial</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
+        .container { background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+        h1 { color: #1a1a2e; font-size: 26px; border-bottom: 2px solid #eee; padding-bottom: 12px; }
+        h2 { color: #2c3e50; font-size: 18px; margin-top: 24px; }
+        p, li { font-size: 15px; color: #444; }
+        .highlight-box { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 14px; margin: 18px 0; border-radius: 0 8px 8px 0; }
+        .footer { text-align: center; margin-top: 32px; font-size: 13px; color: #888; }
+    </style>
+</head>
+<body>
+<main class="container">
+    <h1>FocusDial Privacy Policy</h1>
+    <p><strong>App:</strong> FocusDial (com.timer.focusdial)<br>
+    <strong>Privacy contact:</strong> <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a><br>
+    <strong>Draft updated:</strong> 18 November 2026</p>
+    <div class="highlight-box"><strong>Repository technical draft:</strong> The app owner must approve the responsible legal identity and final policy, reconcile release SDK and store disclosures, and publish the approved policy at the store-linked URL. This local draft does not establish publication or legal compliance.</div>
+
+    <h2>1. Local timer and history</h2>
+    <p>FocusDial stores timer state and session history in the app's local SQLite database, <code>focusdial.db</code>. State includes the selected focus/break mode, running or paused state, remaining and planned duration, session identifier and start/deadline timing, cycle position, configured durations, theme, notification preference and a cosmetic supporter-heart flag. Session records contain an identifier, mode, start and end times, local completion date, planned and recorded active duration, and completed or ended-early outcome.</p>
+    <p>The database restores an interrupted timer and supplies your dated history, totals and streak. These are timer records, not a measurement of attention or productivity. The app does not upload these records to an app-operated server or attach them to advertising requests. There is no FocusDial account, app-provided cloud synchronization, or in-app history export/import service. Timer and history functions can work offline; Google advertising and consent services separately use the network.</p>
+
+    <h2>2. Optional local notifications</h2>
+    <p>If you enable completion notifications, FocusDial requests operating-system notification permission where needed and passes the session deadline to local Android alarm or iOS notification scheduling. The alert has a generic FocusDial session-completed message; it is not a server push service. Notifications may be visible on the lock screen according to your device settings. You can disable them in the app or operating-system settings, and the timer remains usable when permission is denied.</p>
+    <p>The operating system controls delivery timing, including silent, Do Not Disturb and Focus behavior. Android uses an inexact alarm and does not restore that alarm after a device reboot until the app is reopened and reconciles state. Delivery is not guaranteed; there is no continuous background service or special exact-alarm privilege.</p>
+
+    <p>A separate Android daily focus-start reminder is optional and off by default. Its enabled state and chosen hour/minute persist in local timer state; local delivery preferences retain the pending deadline and handled date. It uses local inexact alarms, not server push. RECEIVE_BOOT_COMPLETED restores this reminder schedule after reboot, unlike the completion alarm above. Delivery is suppressed while the app is foregrounded, during a running session or after a completed focus session that day. Enable it with notification permission and disable it in app/device settings. Timer use does not require permission. Reminder messages may be visible on the lock screen and delivery remains subject to system restrictions.</p>
+
+    <h2>3. Google advertising and consent services</h2>
+    <p>Google Mobile Ads (AdMob) may display a separate adaptive Home banner. Google's User Messaging Platform (UMP) requests updated consent information and shows a form when required. Advertising initialization and requests are gated on whether the SDK permits them. Using the timer does not itself give consent to personalized advertising.</p>
+    <p>Support separately asks whether you want to watch a voluntary rewarded-interstitial, with a Not now option. All timer features remain available without watching. Only the SDK's earned-reward callback can earn the persistent cosmetic heart; closing an ad alone does not. Celebration follows both successful storage and full-screen dismissal. The heart is decorative, not money or access to timer features. No ad click is required or encouraged.</p>
+    <p>Google's SDK services may collect or share device or advertising identifiers, IP address and IP-derived approximate location, device/app information, advertising interactions and diagnostics for ad delivery, measurement and fraud prevention. Consent status, region, platform and release configuration affect processing. FocusDial does not include timer state or session-history data in its ad requests. The advertising experience is not offline or a zero-collection service.</p>
+    <p>See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>, <a href="https://policies.google.com/technologies/ads">Google advertising information</a> and the <a href="https://developers.google.com/admob/flutter/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a>. Google's policies govern its processing locations and retention. Clearing timer data does not delete records already held by Google.</p>
+
+    <h2>4. Your choices, retention and deletion</h2>
+    <ul>
+        <li>The toolbar's <strong>Ad privacy</strong> control reopens Google's privacy form. Supported device settings separately provide advertising-ID controls.</li>
+        <li>Completion notifications can be disabled in the app or device notification settings.</li>
+        <li>Local timer state, settings, history and the heart remain until changed or app storage is removed; there is no automatic history-expiration period.</li>
+        <li>Resetting or ending a timer does not erase session history. There is no in-app individual-history or delete-all control. To remove all local records and preferences on Android, clear the app's storage in device settings. This also removes the heart and resets settings.</li>
+        <li>Uninstalling may remove local app data, but platform backup or restore behavior can affect what returns after reinstallation. Clear or manage system-backup copies separately.</li>
+    </ul>
+
+    <h2>5. Backups and security</h2>
+    <p>The Android source manifest does not disable app backup or define backup-exclusion rules. Depending on your device, operating system and backup settings, system backup or device transfer may retain the database and preferences outside the installation. This is distinct from app-provided cloud synchronization. Clearing the app does not guarantee deletion of existing system backups; the relevant device or backup provider controls those copies and retention.</p>
+    <p>The database is in application storage. FocusDial does not add database encryption or provide a password-protected vault. Device access controls and operating-system protections matter, and no storage method is guaranteed secure.</p>
+
+    <h2>6. Contact and policy changes</h2>
+    <p>For privacy questions, concerns about a child's use, or requests concerning data handling, email <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a> and identify FocusDial. Do not email your history unless you choose to disclose it. The contact cannot remotely retrieve or delete records held only on your device; use the controls above. Information voluntarily emailed is shared with the recipient and email providers to handle your request.</p>
+    <p>Changes to data handling should be reflected in this policy and the app's store disclosures. The date above identifies this draft, not a public-policy deployment.</p>
+    <div class="footer">FocusDial — Privacy Policy</div>
+</main>
+<!-- Technical basis (paths relative to timer_focusdial/): README.md;
+flutter_app/lib/timer_controller.dart (focusdial.db state/sessions schema, save, alerts, schedule/cancel);
+flutter_app/lib/ads.dart (AdsGate.init/privacy, HomeBanner, support, SDK-earned heart callback);
+flutter_app/lib/main.dart (toolbar Ad privacy, settings and notification controls);
+flutter_app/android/app/src/main/AndroidManifest.xml (INTERNET, AD_ID, POST_NOTIFICATIONS; no allowBackup=false or backup-exclusion attributes);
+flutter_app/android/app/src/main/kotlin/com/timer/focusdial/MainActivity.kt (local inexact alarm, permission, generic CompletionReceiver message);
+flutter_app/ios/Runner/AppDelegate.swift (local UserNotifications scheduling).
+No build, device, production SDK traffic or public deployment is asserted by this document. -->
+</body>
+</html>
