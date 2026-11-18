@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Privacy Policy - MemoVault: Offline Notes</title></head>
-<body style="font-family: sans-serif; padding: 24px; line-height: 1.6; color: #1e293b;">
-<h1>Privacy Policy for MemoVault: Offline Notes</h1>
-<p>MemoVault: Offline Notes is a 100% offline note-taking vault. Your thoughts, memos, and markdown documents remain entirely in your private device storage and are never uploaded to remote servers.</p>
-<h2>1. Zero Cloud Sync</h2>
-<p>No user account is required. All notes are saved locally.</p>
-<h2>2. Advertising</h2>
-<p>Non-intrusive banner ads are provided via Google AdMob SDK.</p>
-<h2>3. Contact</h2>
-<p>Email: omersukrubektas@gmail.com</p>
-</body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | MemoVault</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
+        .container { background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+        h1 { color: #1a1a2e; font-size: 26px; border-bottom: 2px solid #eee; padding-bottom: 12px; }
+        h2 { color: #2c3e50; font-size: 18px; margin-top: 24px; }
+        p, li { font-size: 15px; color: #444; }
+        .highlight-box { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 14px; margin: 18px 0; border-radius: 0 8px 8px 0; }
+        .footer { text-align: center; margin-top: 32px; font-size: 13px; color: #888; }
+    </style>
+</head>
+<body>
+<main class="container">
+    <h1>MemoVault Privacy Policy</h1>
+    <p><strong>App:</strong> MemoVault (Android: com.merakova.memovault; iOS: com.notes.memovault)<br>
+    <strong>Privacy contact:</strong> <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a><br>
+    <strong>Draft updated:</strong> 18 November 2026</p>
+    <div class="highlight-box"><strong>Repository technical draft:</strong> The app owner must approve the responsible legal identity and final policy, reconcile release SDK and store disclosures, and publish the approved policy at the store-linked URL. This local draft does not establish publication or legal compliance.</div>
+
+    <h2>1. Notes stored on your device</h2>
+    <p>MemoVault stores note identifiers, exact note text, creation timestamps, pin status and archive status as an unencrypted JSON list in <code>memos.json</code>. Hashtags are derived from your note text for organization and local search. Android stores the file in private application files using atomic writes; iOS uses the app's Application Support directory with atomic writes. These records support editing, search, organization and offline Markdown preview. The cosmetic support-heart count is stored separately in local preferences.</p>
+    <p>There is no MemoVault account or app-provided cloud synchronization. The app does not upload notes or tags to an app-operated server or attach them to advertising requests. Notes and preview can work offline, but Google advertising and consent services use the network. “Local notes” is not a promise of zero collection by SDKs or zero exposure through system backup or explicit sharing.</p>
+    <p>On Android, text you explicitly send to MemoVault through system sharing or selected-text actions opens as a new, unsaved note draft. It is not saved automatically or merged into an existing note; you review and save it yourself. Incoming text waits while another editor is open. Unsupported, empty or oversized input is rejected; the intake limit is 32,768 UTF-16 code units. Cancelling the new draft does not add a saved note. The source app and operating system control their own copies.</p>
+    <p>In Markdown preview, tapping a supported task checkbox edits the corresponding saved note locally. Only that checkbox marker changes; fenced code blocks and the rest of the text are preserved. These edits use the same unencrypted note storage, retention, export and deletion rules as other note edits. Neither received shared text nor checkbox changes are uploaded by MemoVault or included in its advertising requests.</p>
+
+    <h2>2. Copying and exporting notes</h2>
+    <p>The copy action places selected note text on the system clipboard at your request. Clipboard access, synchronization and retention depend on your device and settings; it is not a private vault.</p>
+    <p><strong>Export all notes</strong> sends all saved notes, including archived notes regardless of current filters, to system sharing as MD, TXT or JSON. MD/TXT joins note contents with separators; JSON includes identifiers, text, timestamps, pin status and archive status. Exported files are unencrypted. Sharing can create copies outside private application storage, including with the receiving application or its cloud provider. Their privacy and retention rules apply. A system-sharing success result does not establish that your chosen destination saved the file; verify it yourself. Export is not an in-app import or restore service.</p>
+
+    <h2>3. Google advertising and consent services</h2>
+    <p>Google Mobile Ads (AdMob) may display a separate adaptive Home banner. Google's User Messaging Platform (UMP) requests consent information and shows a form when required; the app initializes advertising and makes ad requests only when the SDK permits them. Using note features does not itself give consent to personalized advertising.</p>
+    <p>Support separately offers a voluntary rewarded-interstitial with an explicit Watch ad choice and Not now. No note feature is ad-gated. Only the SDK's earned-reward callback increments the persistent cosmetic heart count, once per shown ad. Closing the ad alone grants no heart; celebration follows successful storage and dismissal. Hearts are decorative, not money or access to features. No ad click is required or encouraged.</p>
+    <p>Google's SDK services may collect or share device or advertising identifiers, IP address and IP-derived approximate location, device/app information, advertising interactions and diagnostics for ad delivery, measurement and fraud prevention. Consent status, region, platform and release configuration affect processing. The app's ad requests do not include note text or tags.</p>
+    <p>See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>, <a href="https://policies.google.com/technologies/ads">Google advertising information</a> and the <a href="https://developers.google.com/admob/flutter/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a>. Google's policies govern its processing locations and retention. Removing notes or the app does not delete records already held by Google.</p>
+
+    <h2>4. Retention and your controls</h2>
+    <ul>
+        <li>Edit or delete individual notes in the app. Deletion asks for confirmation. Archiving only changes organization; it does not delete a note.</li>
+        <li>Use <strong>Privacy choices</strong> in Support to reopen Google's privacy form. Supported device settings also provide advertising-ID controls.</li>
+        <li>Notes remain until changed, deleted or local app storage is removed; there is no automatic note-expiration period. The separately saved heart count remains until app storage/preferences are cleared.</li>
+        <li>Clearing Android app storage removes local notes and preferences. Uninstalling may remove local app data, but platform backup/restore behavior can affect what returns after reinstallation.</li>
+        <li>Deleting a note or clearing the app does not erase copies already placed on the clipboard, exported, shared or held in system backups. Remove those copies through their respective destination or provider.</li>
+    </ul>
+
+    <h2>5. Backups and security</h2>
+    <p>The Android source manifest does not disable app backup or define backup-exclusion rules. The iOS note writer does not mark its Application Support file as excluded from backup. Operating-system backup or device transfer may therefore include notes and preferences, depending on platform, device and your settings. This is separate from an app-operated cloud service. Manage system-backup copies and retention through the relevant device or provider; in-app deletion does not guarantee erasure of existing backups.</p>
+    <p>Private application storage and atomic writes are not encryption. MemoVault does not provide an encrypted or password-protected vault. Protect device access, and consider what you write, copy or share. No storage or transmission method is guaranteed secure.</p>
+
+    <h2>6. Contact and policy changes</h2>
+    <p>For privacy questions, concerns about a child's use, or requests concerning data handling, email <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a> and identify MemoVault. Do not email your notes unless you choose to disclose them. The contact cannot remotely retrieve or delete notes held only on your device; use the app and device controls above. Information voluntarily sent by email is shared with the recipient and email providers to handle your request.</p>
+    <p>Changes to data handling should be reflected in this policy and the app's store disclosures. The date above identifies this draft, not a public-policy deployment.</p>
+    <div class="footer">MemoVault — Privacy Policy</div>
+</main>
+<!-- Technical basis (paths relative to notes_memovault/): README.md;
+flutter_app/lib/main.dart (MemoItem.toJson, memovault/notes channel, _export, _copy, _delete, Home banner);
+flutter_app/android/app/src/main/kotlin/com/notes/memovault/MainActivity.kt (filesDir/memos.json, AtomicFile);
+flutter_app/ios/Runner/AppDelegate.swift (Application Support/memos.json, atomic write; no backup exclusion);
+flutter_app/lib/support.dart (MemoAds UMP gate/privacy, onUserEarnedReward, memovault.support.hearts);
+flutter_app/android/app/src/main/AndroidManifest.xml (INTERNET, AD_ID; no allowBackup=false or backup-exclusion attributes).
+No build, device, production SDK traffic or public deployment is asserted by this document. -->
+</body>
+</html>
