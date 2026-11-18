@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Privacy Policy - FitCalc: BMI & Body Health</title></head>
-<body style="font-family: sans-serif; padding: 24px; line-height: 1.6; color: #1e293b;">
-<h1>Privacy Policy for FitCalc: BMI & Body Health</h1>
-<p>FitCalc: BMI & Body Health is a 100% offline body health and BMI calculator. Your biometric values (height, weight, age) are never transmitted to external servers.</p>
-<h2>1. Zero Cloud Transmission</h2>
-<p>No user account is required and no health data leaves your device.</p>
-<h2>2. Advertising</h2>
-<p>Non-intrusive banner ads are provided via Google AdMob SDK using standard device identifiers.</p>
-<h2>3. Contact</h2>
-<p>Developer: Mobile Tools Studio<br>Email: omersukrubektas@gmail.com</p>
-</body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | FitCalc</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
+        .container { background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+        h1 { color: #1a1a2e; font-size: 26px; border-bottom: 2px solid #eee; padding-bottom: 12px; }
+        h2 { color: #2c3e50; font-size: 18px; margin-top: 24px; }
+        p, li { font-size: 15px; color: #444; }
+        .highlight-box { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 14px; margin: 18px 0; border-radius: 0 8px 8px 0; }
+        .footer { margin-top: 32px; font-size: 13px; color: #666; }
+    </style>
+</head>
+<body>
+<main class="container">
+    <h1>FitCalc Privacy Policy</h1>
+    <p><strong>App:</strong> FitCalc (Android: com.fitcalc.bmi; iOS: com.merakova.fitcalc)<br>
+    <strong>Last updated:</strong> 18 November 2026<br>
+    <strong>Privacy contact:</strong> <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a></p>
+
+    <h2>1. Educational adult scope</h2>
+    <p>FitCalc is an educational worksheet for adult BMI, Mifflin–St Jeor energy estimates and a historical Devine formula reference. Results require age 20 or older and a non-pregnancy/non-breastfeeding scope. Energy estimates are withheld above age 78; the Devine reference is withheld at or below 152.4 cm. It is not a medical device, diagnosis, body-fat measurement, diet prescription, personal weight target or medication-dosing tool. It is not intended for children or for use during pregnancy or breastfeeding. Seek qualified professional advice for individual health decisions.</p>
+    <p>The app has no account, health-history tracker, sensor collection, bank connection or developer health-upload service. Calculations run on your device and work offline. Health inputs and results are not sent to a developer server or included as fields in the app's advertising requests. Separate advertising and consent services use the internet and device/ad information; the entire app is not exclusively offline.</p>
+
+    <h2>2. Inputs and optional local storage</h2>
+    <p>The worksheet processes entered weight, height, age, selected published male/female equation coefficient and an assumed activity factor. The coefficient is a formula parameter, not an assessment of gender identity or physiology. A pregnancy/breastfeeding exclusion choice and a hypothetical comparison factor are not part of the Remember profile; an explicitly pinned reference separately stores its comparison assumptions.</p>
+    <ul>
+        <li><strong>Remember inputs on this device</strong> is optional. Only when enabled does the app save <code>profile.v1</code> in local preferences, containing canonical weight in kg, height in cm, age, selected equation coefficient, baseline factor and metric/imperial display choice. It is one current profile, not a dated health history.</li>
+        <li>Explicitly pinning a result saves one dated reference under <code>pinnedCalculation.v1</code>, independently of Remember inputs. It contains weight, height, age, equation coefficient, display units, exclusion state, baseline and hypothetical activity factors, calculated estimates and formula assumptions. Dates use the device clock. It persists across restarts for comparison, not medical monitoring or a comprehensive health history. Use <strong>Clear pinned result</strong> to remove it; turning Remember off does not remove this separate reference.</li>
+        <li>Language and theme choices are stored separately, whether or not Remember is enabled.</li>
+        <li>A separate <code>supportHeart</code> preference stores an SDK-earned cosmetic heart. It carries no health meaning, financial value or calculator entitlement.</li>
+        <li>Google UMP maintains advertising privacy/consent state separately from the profile and heart.</li>
+    </ul>
+    <p>Local preferences persist across restarts without a scheduled expiry. They are not a dedicated encrypted health vault; protect access to your device. When Remember is off, profile changes are not saved to that profile store. Unreadable saved profile or pinned-reference data is retained for explicit recovery/clearing; saving the affected record is blocked rather than silently overwriting it.</p>
+
+    <h2>3. Deletion, export and OS backups</h2>
+    <p>Turning Remember off removes the saved profile while allowing the current worksheet to remain in memory for that session. <strong>Clear all local profile &amp; heart data</strong> removes the saved profile, pinned reference, cosmetic heart and stored language/theme preferences and resets worksheet inputs. It does not reset Google's UMP consent state; use advertising privacy choices separately. You can also clear app storage/data on Android or delete the app and its data using the operating system. There is no remote account or developer-held health profile to delete.</p>
+    <p>The current app has no user export, import or cloud-sync feature. Screenshots or copies you independently create outside the app remain under your control and are not erased by Clear.</p>
+    <p>Android automatic app backup is disabled in the manifest. This is not a guarantee against every device-transfer mechanism or a copy you make yourself. The app does not promise exclusion from iOS device/account backups; local preferences may be included according to OS and account settings. Local deletion does not remove previous OS backups or externally made copies, and restoring a backup may restore stored data. Manage backups with the OS/backup provider. No storage or transfer mechanism can be guaranteed completely secure.</p>
+
+    <h2>4. Google advertising, consent and optional Support</h2>
+    <p>Google Mobile Ads (AdMob) supplies an adaptive banner on the BMI/Home screen. A separate optional Support dialog offers a rewarded interstitial with a <strong>Not now</strong> choice. Only the SDK-earned callback can save the decorative heart; loading, closing or clicking an advertisement does not earn it. No ad click is requested. Calculators remain available if you refuse Support, if consent is unavailable or if an ad fails.</p>
+    <p>Google's User Messaging Platform (UMP) refreshes consent information and presents a required form when applicable. The app checks <code>canRequestAds</code> before initializing/requesting ads. When required, <strong>Privacy &amp; controls → Advertising privacy choices</strong> opens Google's privacy-options form so you can revisit your choices. Remember-profile permission and the decision to watch optional Support are separate from advertising privacy choices.</p>
+    <p>Google's advertising and consent services may process device and advertising identifiers, IP address and approximate location derived from it, app/device information, ad interactions, performance and diagnostic information, and consent choices. This supports advertising delivery and measurement, fraud prevention and consent management. Actual processing depends on platform, region, settings and consent. The calculation implementation does not attach weight, height, age, profile or results to ad requests.</p>
+    <div class="highlight-box">
+        <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a><br>
+        <a href="https://policies.google.com/technologies/ads" rel="noopener">How Google uses information for advertising</a>
+    </div>
+    <p>Google determines retention and available controls for data its services process. Clearing a profile or uninstalling FitCalc does not itself delete information already held by Google or advertisers. Advertising identifier/privacy controls may also be available through device settings.</p>
+
+    <h2>5. External links and contact</h2>
+    <p>Opening a formula-source or published-policy link launches an external app/browser. The destination receives the normal connection information for that visit and applies its own privacy practices. The app's link does not include your worksheet inputs.</p>
+    <p>For privacy questions or requests, email <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a>. The developer cannot retrieve or remotely erase a profile kept only on your device. Do not send body measurements, health details or screenshots unless necessary for your request. Information you choose to email is used to respond and is handled by the email service involved.</p>
+
+    <h2>6. Policy changes</h2>
+    <p>This policy may change when app behavior or service practices change. The date above identifies this revision.</p>
+    <p class="footer">FitCalc — educational adult calculations, optional local profile and separate Google advertising services.</p>
+</main>
+</body>
+</html>
