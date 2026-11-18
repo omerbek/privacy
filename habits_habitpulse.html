@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Privacy Policy - HabitPulse: Daily Habit Tracker</title></head>
-<body style="font-family: sans-serif; padding: 24px; line-height: 1.6; color: #1e293b;">
-<h1>Privacy Policy for HabitPulse: Daily Habit Tracker</h1>
-<p>HabitPulse: Daily Habit Tracker respects your privacy. All your habits, streaks, and completion logs are stored entirely in local device memory without remote server transmission.</p>
-<h2>1. Zero Cloud Sync</h2>
-<p>No account registration or cloud syncing is required. Your personal habits stay completely on your phone.</p>
-<h2>2. Advertising</h2>
-<p>Non-intrusive banner ads are provided via Google AdMob SDK.</p>
-<h2>3. Contact</h2>
-<p>Email: omersukrubektas@gmail.com</p>
-</body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | HabitPulse: Daily Tracker</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
+        .container { background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+        h1 { color: #1a1a2e; font-size: 26px; border-bottom: 2px solid #eee; padding-bottom: 12px; }
+        h2 { color: #2c3e50; font-size: 18px; margin-top: 24px; }
+        p, li { font-size: 15px; color: #444; }
+        .highlight-box { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 14px; margin: 18px 0; border-radius: 0 8px 8px 0; }
+        .footer { margin-top: 32px; font-size: 13px; color: #666; }
+    </style>
+</head>
+<body>
+<main class="container">
+    <h1>HabitPulse Privacy Policy</h1>
+    <p><strong>App:</strong> HabitPulse: Daily Tracker (Android: com.habits.habitpulse)<br>
+    <strong>Last updated:</strong> 18 November 2026<br>
+    <strong>Privacy contact:</strong> <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a></p>
+
+    <h2>1. Local habit tracking</h2>
+    <p>HabitPulse lets you create routines, schedule weekdays, correct dated checkoffs, review history and archive or restore habits. Core habit functions work locally without an account. The app does not provide a habit-upload service, cloud sync. Habit names, categories, schedules and checkoff history are not sent to a developer server or included as fields in the app's advertising requests. Separate Google advertising and consent services use the network, so this is not a claim that no information ever leaves the device.</p>
+
+    <p>Optional Android reminders are off by default. Enabling them requests notification permission where required. Your chosen local time, enabled state, translated generic message and last-delivery date are stored in app-private preferences separately from habit history. Local alarms check due unfinished, non-archived habits without sending them to a server; completion or archiving suppresses the corresponding reminder. RECEIVE_BOOT_COMPLETED restores scheduling after restart. Disable reminders in the app or device settings. Notifications may appear on the lock screen; system restrictions can delay or suppress delivery. Tracking works without notification permission.</p>
+
+    <h2>2. What is stored</h2>
+    <ul>
+        <li>Each habit has an identifier, name, category, creation date, dated completion checkoffs, schedule revisions and archive periods. This history makes prior dates and streak calculations meaningful after a schedule change.</li>
+        <li>The habit document is stored locally under <code>habits_v1</code>: Android uses app-private SharedPreferences named <code>habitpulse_habits</code>, and iOS uses UserDefaults. The current document format preserves earlier records when saving an upgrade.</li>
+        <li>A separate local preference, <code>supporter_heart_v1</code>, stores a cosmetic heart earned through optional Support. It has no monetary value and is not a habit score.</li>
+        <li>Google UMP manages advertising consent information separately from the habit document.</li>
+    </ul>
+    <p>Habits and their history are retained across restarts without a scheduled expiry until you delete them or remove the app's data. Archiving only pauses a habit; it does not delete its past history. Local preferences are not a dedicated encrypted vault. Habit names and checkoffs can reveal personal routines; avoid recording secrets or sensitive details you do not want stored on the device.</p>
+    <p>The app reports pending or failed saves and offers retry. If existing data cannot be loaded, it does not authorize overwriting it with an empty document. A displayed change that still has an unsaved warning may not survive closing the app.</p>
+
+    <h2>3. Export, deletion and device backups</h2>
+    <p>The current app does not offer user export, import or a cloud backup/restore interface. Its internal JSON persistence is not a user export feature.</p>
+    <p>Use <strong>Delete habit permanently</strong> and confirm to remove the habit and its dated history from the current local document once the save succeeds. Individual dated checkoffs can also be corrected. Archive/restore is reversible and keeps history. To remove all current habits and the separate heart preference, clear app storage/data in Android settings or delete the app and its data through the operating system. There is no remote account to close and the developer cannot access or remotely erase habits stored only on your device.</p>
+    <p>Android backup is not disabled by the app manifest. Android/iOS device backup or transfer may include local app data according to OS, device and account settings. This is an operating-system service rather than a HabitPulse upload service. Deleting a habit or clearing the app does not erase earlier device backups or copies you have made outside the app; restoring a backup may restore old habits. Manage these copies with your OS or backup provider. No storage or transfer mechanism is guaranteed completely secure.</p>
+
+    <h2>4. Advertising and voluntary Support</h2>
+    <p>Google Mobile Ads (AdMob) supplies a consent-gated adaptive banner on Home. A separate voluntary Support action offers a rewarded interstitial with a <strong>Not now</strong> choice. Tracking remains available without watching an ad. Only an SDK-earned reward callback can save a cosmetic supporter heart. Ad loading, closing and clicking do not grant it, and no ad click is requested.</p>
+    <p>Google's User Messaging Platform (UMP) refreshes consent information and presents required forms where applicable. Ad requests are gated by Google's <code>canRequestAds</code> eligibility. When required, <strong>Ad privacy options</strong> is available in the Home menu to revisit choices. Declining Support, a failed consent request or unavailable advertising does not block habit tracking.</p>
+    <p>Google's advertising and consent services may process device and advertising identifiers, IP address and approximate location derived from it, app/device information, ad interactions, performance and diagnostic information, and consent choices. These support advertising delivery/measurement, fraud prevention and consent management. Processing depends on platform, region, settings and consent. This information is separate from the local habit records described above.</p>
+    <div class="highlight-box">
+        <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a><br>
+        <a href="https://policies.google.com/technologies/ads" rel="noopener">How Google uses information for advertising</a>
+    </div>
+    <p>Google controls retention and available privacy mechanisms for information processed by its services. Deleting local habits or the supporter heart does not itself delete information already held by Google or advertisers. Review advertising identifier/privacy settings on your device as well as the in-app privacy options.</p>
+
+    <h2>5. Contact and changes</h2>
+    <p>For privacy questions or requests, contact <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a>. Do not send personal habit history unless necessary for your request. Information you voluntarily email is used to respond and is handled by the email service involved.</p>
+    <p>This policy may be revised when app behavior or service practices change. The date above identifies this revision.</p>
+    <p class="footer">HabitPulse — local routines and history with separate Google advertising and consent services.</p>
+</main>
+</body>
+</html>
