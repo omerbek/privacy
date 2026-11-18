@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Privacy Policy - GeoCompass: Compass & Level</title></head>
-<body style="font-family: sans-serif; padding: 24px; line-height: 1.6; color: #1e293b;">
-<h1>Privacy Policy for GeoCompass: Compass & Level</h1>
-<p>GeoCompass: Compass & Level reads hardware sensor values (magnetometer, accelerometer) directly on your device to display heading and level angles. Sensor readings remain strictly in temporary memory and are never transmitted to external servers.</p>
-<h2>1. Zero Cloud Sync</h2>
-<p>No location tracking, logging or personal identifiers are stored.</p>
-<h2>2. Advertising</h2>
-<p>Non-intrusive banner ads are provided via Google AdMob SDK.</p>
-<h2>3. Contact</h2>
-<p>Email: omersukrubektas@gmail.com</p>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | GeoCompass</title>
+<style>body{font-family:system-ui,sans-serif;line-height:1.7;max-width:800px;margin:auto;padding:24px;color:#333}h1,h2{color:#603c2a}li{margin-bottom:8px}</style>
+</head>
+<body>
+<main>
+<h1>GeoCompass Privacy Policy</h1>
+<p><strong>App:</strong> GeoCompass (Android: com.merakova.geocompass)<br><strong>Last updated:</strong> 18 November 2026<br><strong>Privacy contact:</strong> <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a></p>
+<h2>1. Sensor processing, not GPS navigation</h2>
+<p>GeoCompass uses available device sensors to display magnetic heading, magnetic field strength and flat-surface pitch/roll. Android uses rotation-vector or gravity/accelerometer and magnetometer samples. The iPhone implementation uses CoreMotion gravity and CoreLocation magnetic-heading updates, not GPS/location updates. The app does not request location permission or provide GPS position, coordinates, altitude, maps or true-north navigation.</p>
+<p>Live sensor readings, Hold and the session's relative level-zero reference are processed on-device. Live readings are not continuously logged or uploaded by the app. Sensor conditions, interference and hardware affect the readings; this is not professional precision certification. Do not rely on a phone as your only navigation or safety instrument.</p>
+<h2>2. Named heading targets stored on your device</h2>
+<p>When you explicitly save a bearing target, GeoCompass stores the name you enter, the captured magnetic bearing, its capture timestamp and the magnetic-reference label. These are persistent local records, not merely temporary sensor readings. A saved target is a direction, not a geographic destination, GPS position, route or location history. Selecting Align compares it with current live heading and shows estimated left/right deviation without freezing the live reading. Missing, stale, held or unreliable sensor states may prevent capture or alignment.</p>
+<p>Target records use <code>bearingTargetsV1</code> in Android app-private preferences or iOS UserDefaults. A cosmetic Support-heart flag is stored separately in preferences. These records have no scheduled expiry. Preference storage is not an encrypted vault; avoid sensitive personal details in target names. No GeoCompass account or app-operated cloud synchronization service exists. Target names, saved bearings and live sensor samples are not sent to a developer server or included as fields in the app's advertising requests.</p>
+<h2>3. Advertising, consent and optional Support</h2>
+<p>Google Mobile Ads (AdMob) may display a separate adaptive Home banner. Optional rewarded-interstitial Support advertising requires an explicit choice and never locks instruments or saved targets. Only an SDK-earned reward saves the decorative heart; celebration follows successful storage and dismissal. Loading, closing or clicking an ad alone does not earn it, and no ad click is requested.</p>
+<p>Google's User Messaging Platform (UMP) refreshes consent information, presents required forms where applicable and gates advertising requests on eligibility. When required, Support provides privacy choices so you can reopen Google's form. Local sensor tools do not require accepting optional Support.</p>
+<p>Google advertising and consent services use network connections and may process device/advertising identifiers, IP address and approximate location inferred from it, app/device information, ad interactions, performance/diagnostic information and privacy choices for advertising, measurement, fraud prevention and consent management. Processing depends on platform, region, settings and consent. The absence of GPS permission and local handling of sensor data do not mean the whole app collects no data or never contacts remote services.</p>
+<p>See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/ads">Google advertising information</a> and <a href="https://developers.google.com/admob/flutter/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a>. Google controls retention and available controls for its services. Deleting local targets does not delete information already held by Google or advertisers. Operating-system advertising-identifier controls may also be available.</p>
+<h2>4. Your controls, retention and backups</h2>
+<p>You can rename or confirm deletion of an individual saved target in the app. Stopping alignment only deselects a target; it does not delete it. To remove all local targets and the cosmetic heart, use Android's Clear storage/app data control or remove the app and its data through the operating system. There is no developer-held target database or account to close, and the developer cannot remotely retrieve or erase records held only on your device.</p>
+<p>The Android manifest does not disable default app backup; iOS preferences also follow operating-system backup and device-transfer settings. Those services may preserve target names, bearings, capture times and the heart according to device/account settings. This is an operating-system service, not GeoCompass cloud sync. Local deletion does not erase existing backups and a device restore may restore records. Manage those copies through your operating system or backup provider.</p>
+<h2>5. Contact, security and policy changes</h2>
+<p>For privacy questions, email <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a> and identify GeoCompass. Avoid sending sensitive target names or other unnecessary personal details. Information you choose to email is handled by the recipient and email providers to respond to your request. Protect device access; no storage or transmission method is guaranteed secure. This policy may change as app behavior or service practices change; the revision date appears above.</p>
+</main>
+</body>
+</html>
