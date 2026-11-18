@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Privacy Policy - ColorCraft: Palette & Contrast</title></head>
-<body style="font-family: sans-serif; padding: 24px; line-height: 1.6; color: #1e293b;">
-<h1>Privacy Policy for ColorCraft: Palette & Contrast</h1>
-<p>ColorCraft: Palette & Contrast is a local design and developer utility. All color calculations, contrast checks, and saved palettes remain 100% on your device.</p>
-<h2>1. Zero Cloud Transmission</h2>
-<p>No user account is required and no personal color data is sent to external servers.</p>
-<h2>2. Advertising</h2>
-<p>Non-intrusive banner ads are provided via Google AdMob SDK using standard device identifiers.</p>
-<h2>3. Contact</h2>
-<p>Developer: Mobile Tools Studio<br>Email: omersukrubektas@gmail.com</p>
-</body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | ColorCraft</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
+        .container { background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+        h1 { color: #1a1a2e; font-size: 26px; border-bottom: 2px solid #eee; padding-bottom: 12px; }
+        h2 { color: #2c3e50; font-size: 18px; margin-top: 24px; }
+        p, li { font-size: 15px; color: #444; }
+        .highlight-box { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 14px; margin: 18px 0; border-radius: 0 8px 8px 0; }
+        .footer { margin-top: 32px; font-size: 13px; color: #666; }
+    </style>
+</head>
+<body>
+<main class="container">
+    <h1>ColorCraft Privacy Policy</h1>
+    <p><strong>App:</strong> ColorCraft (Android: com.colorcraft.palette)<br>
+    <strong>Last updated:</strong> 18 November 2026<br>
+    <strong>Privacy contact:</strong> <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a></p>
+
+    <h2>1. Scope and local processing</h2>
+    <p>ColorCraft generates and stores color palettes, converts color values and checks contrast between a text/background pair. You can enter an exact six-digit HEX color or send a converter color to a palette slot, then pin it so regeneration changes only unlocked slots. These core tools run on your device without an account. The app has no palette-upload or cloud-sync service. Palette names, exact colors, pin states and calculation results are not sent to a developer server or included as fields in the app's advertising requests. This does not mean that the whole app is offline: Google advertising and consent services use network connections.</p>
+
+    <h2>2. Information stored on your device</h2>
+    <ul>
+        <li>The current draft palette name, five colors (including exact HEX colors you enter) and their lock/pin states, plus each saved palette's identifier, name, colors and locks, are stored in local preferences under <code>bench.v1</code>. Draft changes are saved automatically; saving a named palette adds a library record. Replacing and pinning a draft slot does not change previously saved palettes.</li>
+        <li>Your appearance choice is stored separately as a preference. Interface language follows the phone's primary language: Turkish for Turkish, English otherwise; there is no saved language override.</li>
+        <li>A decorative supporter-heart flag is stored locally after a successful SDK-earned reward and save. It has no monetary value and does not unlock tools.</li>
+        <li>Advertising consent information is managed separately by Google's User Messaging Platform (UMP), not as part of a palette.</li>
+    </ul>
+    <p>Local records are retained across restarts without a scheduled expiry. Local preference storage is not a dedicated encrypted vault; avoid putting confidential information in palette names.</p>
+
+    <h2>3. Copying and export</h2>
+    <p>Only your explicit copy action places color text or an ordered palette on the system clipboard. Palette formats are HEX, CSS custom properties and JSON; JSON includes the palette name. A recovery-copy control may also copy the stored palette document when it cannot be read normally. ColorCraft does not automatically upload these copies and does not provide file/image sharing or a cloud backup/restore interface.</p>
+    <p>The clipboard is controlled by the operating system and may be accessible to other apps or clipboard-sync features according to your device settings. Text that you paste into another app is governed by that app's practices. Replacing or deleting a palette does not erase clipboard history or copies you have made elsewhere.</p>
+
+    <h2>4. Advertising, consent and optional Support</h2>
+    <p>Google Mobile Ads (AdMob) supplies an adaptive banner on the Palette screen. A separate, voluntary Support action offers a rewarded interstitial after you choose to proceed. Core tools never require watching an ad. Only Google's earned-reward callback can cause the cosmetic heart to be saved; merely loading, closing or clicking an ad does not earn it. There is no request to click advertisements.</p>
+    <p>The app refreshes UMP consent information, presents a required form when applicable, and checks Google's <code>canRequestAds</code> eligibility before requesting ads. When Google requires privacy options, <strong>Support → Privacy choices</strong> opens them again. Declining optional Support, an unavailable ad or a consent/ad failure does not block palette tools.</p>
+    <p>Google's advertising and consent services may process device and advertising identifiers, IP address and approximate location derived from it, app/device information, ad interactions, performance and diagnostic information, and privacy choices to provide advertising, measurement, fraud prevention and consent management. Processing depends on platform, region, settings and consent. Local palette storage and advertising processing are separate; an advertising service can use the network even though palette operations are local.</p>
+    <div class="highlight-box">
+        <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a><br>
+        <a href="https://policies.google.com/technologies/ads" rel="noopener">How Google uses information for advertising</a>
+    </div>
+    <p>Google controls retention and available account/device privacy controls for information its services process. Deleting local ColorCraft data does not by itself delete information already held by Google or an advertiser. You can also review advertising identifier and privacy controls in your operating-system settings.</p>
+
+    <h2>5. Deletion, device backup and security</h2>
+    <p>You can rename or delete saved palettes in the library. Deleting a library record does not necessarily remove the current draft: an opened palette can remain there until you change it. To remove all local drafts, saved palettes, settings and the heart, use Android's Clear storage/app data control or delete the app and its data through the operating system. There is no account to close and no developer-held palette database to delete.</p>
+    <p>ColorCraft does not disable Android's default app-backup behavior. Device backup or transfer on Android or iOS may include preferences according to operating-system, device and account settings. Such a copy is an OS service, not a ColorCraft upload service. Local deletion does not remove earlier backups, and restoring a device backup may restore records. Manage those copies through your backup provider. No storage or transfer method can be guaranteed completely secure.</p>
+
+    <h2>6. Contact and changes</h2>
+    <p>For privacy questions or requests, email <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a>. The developer cannot retrieve palettes stored only on your device. Do not send sensitive palette names or recovery documents unless necessary for a request; information you choose to email is used to respond and is handled by the email service involved.</p>
+    <p>This policy may be updated when app behavior or service practices change. The date above identifies the latest revision.</p>
+    <p class="footer">ColorCraft — local color tools with separate Google advertising and consent services.</p>
+</main>
+</body>
+</html>
