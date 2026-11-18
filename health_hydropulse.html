@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Privacy Policy - HydroPulse: Water Tracker</title></head>
-<body style="font-family: sans-serif; padding: 24px; line-height: 1.6; color: #1e293b;">
-<h1>Privacy Policy for HydroPulse: Water Tracker</h1>
-<p>HydroPulse: Water Tracker respects your privacy. All your daily water logs, weight targets, and hydration history are stored 100% locally on your device.</p>
-<h2>1. Zero Cloud Transmission</h2>
-<p>No user account is required and no health data is transmitted to external servers.</p>
-<h2>2. Advertising</h2>
-<p>Non-intrusive banner ads are provided via Google AdMob SDK using standard device identifiers.</p>
-<h2>3. Contact</h2>
-<p>Developer: Mobile Tools Studio<br>Email: omersukrubektas@gmail.com</p>
-</body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | HydroPulse</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
+        .container { background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+        h1 { color: #1a1a2e; font-size: 26px; border-bottom: 2px solid #eee; padding-bottom: 12px; }
+        h2 { color: #2c3e50; font-size: 18px; margin-top: 24px; }
+        p, li { font-size: 15px; color: #444; }
+        .highlight-box { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 14px; margin: 18px 0; border-radius: 0 8px 8px 0; }
+        .footer { text-align: center; margin-top: 32px; font-size: 13px; color: #888; }
+    </style>
+</head>
+<body>
+<main class="container">
+    <h1>HydroPulse Privacy Policy</h1>
+    <p><strong>App:</strong> HydroPulse (Android: com.hydropulse.watertracker)<br>
+    <strong>Privacy contact:</strong> <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a><br>
+    <strong>Draft updated:</strong> 18 November 2026</p>
+    <div class="highlight-box"><strong>Repository technical draft:</strong> The app owner must approve the responsible legal identity and final policy, reconcile release SDK and store disclosures, and publish the approved policy at the store-linked URL. This local draft does not establish publication or legal compliance.</div>
+
+    <h2>1. Water diary and settings</h2>
+    <p>HydroPulse stores the water amounts you enter, entry identifiers, recorded dates and times, daily goal snapshots, your current personal goal, calculator weight and exercise inputs, the optional heat adjustment, volume unit, appearance and language settings. A cosmetic supporter-heart flag is also stored. These are saved in the app's local SQLite database, <code>hydropulse.db</code>, to restore the diary and settings after restart and calculate your displayed totals and history.</p>
+    <p>These diary and calculator values are not attached to advertising requests or sent to an app-operated server by HydroPulse. The app has no user account or app-provided cloud synchronization. There is no in-app diary export or import feature. The diary records what you enter; it does not read a hydration sensor, health-record service or exercise tracker. Its estimate is not medical advice or a measurement of hydration.</p>
+
+    <p>Optional Android daily diary reminders are off by default. Your chosen local time, enabled state, translated message and delivery bookkeeping are stored in a separate table in <code>hydropulse.db</code>. Enabling reminders requests notification permission where required. Local inexact alarms deliver a generic diary prompt, not a target-driven instruction to drink. RECEIVE_BOOT_COMPLETED restores scheduling after reboot. Disable reminders in the app or device settings. Notification text may appear on the lock screen; system restrictions can delay or suppress delivery. No server push service is used and the diary works without permission. Clearing app storage removes reminder settings as well as diary data.</p>
+
+    <h2>2. Google advertising and consent services</h2>
+    <p>Google Mobile Ads (AdMob) and Google's User Messaging Platform (UMP) use network services separately from the local diary. UMP requests updated consent information, shows a consent form when required, and checks whether advertising requests are permitted before ad initialization and requests. Using the diary does not itself give consent to personalized advertising. A banner may appear on Home when eligible and configured.</p>
+    <p>Support &amp; settings offers a separately confirmed, voluntary rewarded-interstitial ad. All diary features remain available without watching it. Only the SDK's earned-reward callback can earn the persistent cosmetic heart; simply closing an ad does not. The heart is not money, a health benefit or access to a feature. Celebration waits for both successful storage and dismissal. No ad click is required or encouraged.</p>
+    <p>Google's SDK services may collect or share device or advertising identifiers, IP address and IP-derived approximate location, device/app information, advertising interactions and diagnostics for ad delivery, measurement and fraud prevention. Consent status, region, platform and release configuration affect processing. The app does not supply water entries, goals or calculator inputs as ad targeting data. Local diary functionality can work offline; this is not a claim that the whole app or its advertising is offline or collects no data.</p>
+    <p>See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>, <a href="https://policies.google.com/technologies/ads">Google advertising information</a> and the <a href="https://developers.google.com/admob/flutter/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a>. Google's policies govern its processing locations and retention; deleting the local diary does not delete records already held by Google.</p>
+
+    <h2>3. Your choices and deletion</h2>
+    <ul>
+        <li>Diary entries can be corrected or individually deleted after confirmation.</li>
+        <li><strong>Delete hydration data</strong> in Support &amp; settings removes entries and recorded goal history and resets the personal goal, calculator inputs and volume unit. It initializes today's default goal again. It does not clear the cosmetic heart, appearance or language preference.</li>
+        <li>When UMP requires privacy options, <strong>Advertising privacy options</strong> appears in Support &amp; settings to reopen the Google form. Device advertising-ID controls are also available through supported operating-system settings.</li>
+        <li>Clearing Android app storage removes the local database, including the heart and preferences. Uninstalling may remove local app data; platform backup or restore behavior can affect what returns on reinstallation.</li>
+    </ul>
+
+    <h2>4. Retention, backups and security</h2>
+    <p>Local data remains until you change or delete it or app storage is removed; there is no automatic diary-expiration period. The database is in app storage, but HydroPulse does not add database encryption or provide a password-protected vault. Device access controls and operating-system protections matter; no storage method is guaranteed secure.</p>
+    <p>The Android source manifest does not disable app backup or define backup-exclusion rules. Depending on device, operating system and your settings, system backup or device transfer may retain app data outside the installation, including diary/calculator values. This is distinct from an app-provided cloud service. In-app deletion does not guarantee deletion of existing system backups. Manage backup copies and retention through the relevant device or backup provider.</p>
+
+    <h2>5. Contact and policy changes</h2>
+    <p>For privacy questions, concerns about a child's use, or requests concerning data handling, email <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a> and identify HydroPulse. Do not send your full diary unless you choose to disclose it. The contact cannot remotely retrieve or delete a diary stored only on your device; use the controls above. Information you voluntarily email is shared with the recipient and email providers to handle your request.</p>
+    <p>Changes to data handling should be reflected in this policy and the app's store disclosures. The date above identifies this draft, not a public-policy deployment.</p>
+    <div class="footer">HydroPulse — Privacy Policy</div>
+</main>
+<!-- Technical basis (paths relative to health_hydropulse/): README.md;
+flutter_app/lib/diary.dart (Diary.encode, DiaryStore.open/save);
+flutter_app/lib/main.dart (Home banner, Support reward callback, deletion/settings controls);
+flutter_app/lib/ads.dart (HydroAds.initialize/privacy, UMP eligibility);
+flutter_app/android/app/src/main/AndroidManifest.xml (INTERNET, AD_ID; no allowBackup=false or backup-exclusion attributes).
+No build, device, production SDK traffic or public deployment is asserted by this document. -->
+</body>
+</html>
