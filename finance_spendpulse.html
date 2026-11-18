@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Privacy Policy - SpendPulse: Daily Expense</title></head>
-<body style="font-family: sans-serif; padding: 24px; line-height: 1.6; color: #1e293b;">
-<h1>Privacy Policy for SpendPulse: Daily Expense</h1>
-<p>SpendPulse: Daily Expense operates strictly offline. All your financial transactions, account balances, and budget numbers are stored inside local device memory without remote transmission.</p>
-<h2>1. Zero Cloud Sync</h2>
-<p>No financial accounts or login credentials are required. Your data never leaves your device.</p>
-<h2>2. Advertising</h2>
-<p>Non-intrusive banner ads are provided via Google AdMob SDK.</p>
-<h2>3. Contact</h2>
-<p>Email: omersukrubektas@gmail.com</p>
-</body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | SpendPulse</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
+        .container { background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+        h1 { color: #1a1a2e; font-size: 26px; border-bottom: 2px solid #eee; padding-bottom: 12px; }
+        h2 { color: #2c3e50; font-size: 18px; margin-top: 24px; }
+        p, li { font-size: 15px; color: #444; }
+        .highlight-box { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 14px; margin: 18px 0; border-radius: 0 8px 8px 0; }
+        .footer { margin-top: 32px; font-size: 13px; color: #666; }
+    </style>
+</head>
+<body>
+<main class="container">
+    <h1>SpendPulse Privacy Policy</h1>
+    <p><strong>App:</strong> SpendPulse (Android: com.merakova.spendpulse)<br>
+    <strong>Last updated:</strong> 18 November 2026<br>
+    <strong>Privacy contact:</strong> <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a></p>
+
+    <h2>1. Manual local ledger</h2>
+    <p>SpendPulse lets you manually record income and expenses, review recorded totals and set monthly expense limits. It does not connect to a bank, require an account or provide cloud sync. Ledger functions work offline. Financial entries, search text, limits and reports are processed on your device, not uploaded to a developer ledger service or included as fields in the app's advertising requests. Advertising and consent SDKs nevertheless use the internet and process separate information as described below. Recorded net is not a bank balance and the app does not provide financial advice.</p>
+
+    <h2>2. Data stored and why</h2>
+    <ul>
+        <li>The private file <code>spendpulse_transactions.json</code> stores transaction identifiers, descriptions, categories, income/expense type, USD amounts in integer minor units, creation timestamps, transaction dates and monthly limits. These support editing, history, filtering and calculations.</li>
+        <li><strong>Repeat transaction</strong> copies an existing record's description, category, amount and income/expense type into an editable new draft, initially dated today. Only an explicit save creates a new local transaction with its own identifier and creation timestamp. Cancelling creates no record and the original transaction is unchanged. This is manual reuse, not bank access, an automatic recurring payment or a scheduled transaction service.</li>
+        <li>When upgrading a valid older ledger, the app retains its original bytes in <code>spendpulse_transactions.json.v1.original</code> for manual recovery before replacing the active file with the current format. Temporary sibling files may also exist during saves.</li>
+        <li><code>spendpulse_support.json</code> separately stores the number of cosmetic hearts earned through the optional Support advertisement.</li>
+        <li>Google UMP maintains advertising privacy/consent state separately from the financial ledger.</li>
+    </ul>
+    <p>The ledger and recovery files are in app-private storage (Android internal files or iOS Application Support). They are plaintext, not protected by app-level encryption. They have no scheduled expiry. Use device access controls and avoid recording passwords, bank credentials or unnecessary sensitive details. If a ledger cannot be read, the app shows recovery/retry information instead of replacing it with an empty writable ledger.</p>
+
+    <h2>3. CSV export and sharing</h2>
+    <p>CSV sharing requires your confirmation and exports the transactions in the currently displayed month/category/type/search scope. The confirmation shows the scope and record count and warns that the report contains personal financial details. The report is not a restorable backup and the app has no in-app restore function.</p>
+    <p>SpendPulse writes a temporary CSV file and opens the operating-system share chooser. Android grants the receiving app temporary read access through a content URI; iOS uses its activity sheet. The app does not automatically upload the report. You choose the receiving app or destination; it may then store or transmit the data under its own privacy policy. Review the contents before sharing.</p>
+    <p>The temporary export copy remains in OS-managed cache/temporary storage until replaced or cleared, including when sharing is cancelled. Exported or received copies are independent of the active ledger. Deleting a transaction does not erase a previous CSV, a recipient's copy or an OS backup.</p>
+
+    <h2>4. Google advertising and privacy choices</h2>
+    <p>Google Mobile Ads (AdMob) supplies an adaptive banner on Home and an optional rewarded interstitial in Support. Support requires an affirmative choice and offers <strong>Not now</strong>. Only the SDK's earned-reward callback adds a cosmetic heart after it is saved; loading, dismissing or clicking an ad does not grant one. Hearts do not alter financial figures or unlock features. No ad click is requested, and refusing Support or an ad failure does not restrict the ledger.</p>
+    <p>The app refreshes consent information through Google's User Messaging Platform (UMP), presents required forms where applicable, and checks <code>canRequestAds</code> before ad initialization/requests. When required, <strong>Support</strong> exposes advertising privacy options so you can revisit your choices.</p>
+    <p>Google services may process device/advertising identifiers, IP address and approximate location derived from it, device/app information, advertising interactions, performance and diagnostic information, and consent choices. These services support ad delivery and measurement, fraud prevention and consent management. Actual processing depends on platform, region, settings and consent. Local financial storage is separate from this SDK processing; the entire app must not be treated as exclusively offline.</p>
+    <div class="highlight-box">
+        <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a><br>
+        <a href="https://policies.google.com/technologies/ads" rel="noopener">How Google uses information for advertising</a>
+    </div>
+    <p>Google determines retention and available controls for data processed by its services. Clearing the ledger does not itself delete data already held by Google or advertisers. Advertising identifier and privacy controls may also be available in your device settings.</p>
+
+    <h2>5. Retention, deletion and backup limits</h2>
+    <p>You can edit or confirm deletion of an individual transaction. Leaving a month's limit blank removes that limit. These changes affect the active ledger only: a legacy recovery file can still contain older entries, and there is no destructive in-app Reset. To remove all private ledger files, the recovery copy and support hearts, use Android's Clear storage/app data control or delete the app and its data through the operating system. No developer-held account or financial database exists to erase.</p>
+    <p>Android automatic app backup is disabled in the app manifest. This is not a guarantee against every device manufacturer's transfer mechanism or a copy you make yourself. The iOS storage implementation does not exclude Application Support files from OS backup; device/account backups may therefore include the ledger and recovery copy according to your settings. The app provides neither cloud sync nor its own cloud backup service. Manage existing OS backups with the OS/backup provider: local deletion does not erase them and a restore may bring data back. Separately delete CSV copies wherever you shared or saved them.</p>
+    <p>No storage or sharing method is completely secure. The developer cannot remotely read, recover or erase a ledger held only on your device.</p>
+
+    <h2>6. Contact and policy changes</h2>
+    <p>For privacy questions or requests, contact <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a>. Do not send your ledger, recovery file, CSV or financial details unless necessary for your request. Information you choose to email is used to respond and is handled by the email service involved.</p>
+    <p>This policy may change as the app or its services change. The revision date appears above.</p>
+    <p class="footer">SpendPulse — manual financial records, user-directed sharing and separate Google advertising services.</p>
+</main>
+</body>
+</html>
