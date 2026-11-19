@@ -1,12 +1,100 @@
-<!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Privacy Policy - QuickQR: Barcode Generator</title></head>
-<body style="font-family: sans-serif; padding: 24px; line-height: 1.6; color: #1e293b;">
-<h1>Privacy Policy for QuickQR: Barcode Generator</h1>
-<p>Your privacy is respected. QuickQR: Barcode Generator creates and renders QR codes completely offline on your device without sending text or links to external servers.</p>
-<h2>1. Data Privacy</h2>
-<p>We do not store or transmit your scanned or generated QR code payloads.</p>
-<h2>2. Advertising</h2>
-<p>Non-intrusive banner ads are provided via Google AdMob SDK.</p>
-<h2>3. Contact</h2>
-<p>Email: omersukrubektas@gmail.com</p>
-</body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickQR Privacy Policy / Gizlilik Politikası</title>
+  <style>
+    body { max-width: 52rem; margin: 2rem auto; padding: 0 1rem; font: 1rem/1.65 system-ui, sans-serif; color: #172a33; background: #fff; }
+    h1, h2, h3 { line-height: 1.25; }
+    a { color: #005d78; overflow-wrap: anywhere; }
+    section { margin-top: 3rem; }
+    li { margin: .5rem 0; }
+    code { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>QuickQR Privacy Policy / Gizlilik Politikası</h1>
+    <p>Updated / Güncelleme: 2026-11-19</p>
+    <p>Android: <code>com.qrcode.quickqr</code></p>
+    <nav aria-label="Language / Dil"><a href="#english">English</a> · <a href="#turkce" lang="tr">Türkçe</a></nav>
+  </header>
+
+  <main>
+    <section id="english" lang="en" aria-labelledby="en-title">
+      <h2 id="en-title">English</h2>
+      <p>This policy describes QuickQR: QR Code Generator for Android. Contact the developer at <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a>.</p>
+
+      <h3>1. QR content and camera scope</h3>
+      <p>QuickQR generates static QR codes on your device from links, text and personal Wi-Fi settings you enter, or plain text you choose to share into the app. Encoding and previewing this content happen locally. The app does not attach your QR payload, Wi-Fi password or saved-code name to its advertising requests. QuickQR is a generator, not a QR scanner or barcode reader, and its Android QR tools do not request camera access.</p>
+
+      <h3>2. Local storage and your controls</h3>
+      <p>QuickQR can store content on your device. When you choose to save history, it keeps up to 100 recent saved entries, including their content, type and creation time. Named or pinned saved codes also retain their name and content. The app uses protected local storage through flutter_secure_storage for these records, the Wi-Fi retention preference and the earned cosmetic heart. This is not a guarantee against access by someone who controls your device.</p>
+      <p>Wi-Fi entries can contain the network name, password, security type and hidden-network setting. They are session-only by default. Persistent Wi-Fi history and named-code storage require your separate Wi-Fi retention opt-in. Turning that option off excludes Wi-Fi entries from the persisted records on the next successful save; it does not erase the current draft or session entries from the screen.</p>
+      <p>Use the in-app controls to delete individual history entries, clear history, or separately delete named saved codes. Clearing history does not delete separately named codes. Storage changes require a successful device-storage write; the app reports storage errors. History has a 100-entry limit, not a fixed time-based expiry. There is no account or cloud QR history service in QuickQR. Android application backup is disabled in the app configuration.</p>
+
+      <h3>3. Sensitive Wi-Fi codes, exports and clipboard</h3>
+      <p>Anyone who can read a Wi-Fi QR can recover its network credentials. Hiding the password in the interface does not encrypt the QR image or its content. Only include information you intend to disclose to recipients.</p>
+      <p>When you save PNG/SVG using Android's system document picker or share using the system share sheet, you select a destination or receiving app. Sharing may also involve files prepared by the sharing component. Your selected storage provider or receiving app may store, transmit or sync the content under its own policy. Copying a payload puts its content, including a Wi-Fi password when present, on the system clipboard; the app asks for confirmation before copying Wi-Fi credentials.</p>
+      <p>Deleting QuickQR history or turning off Wi-Fi retention does not delete exported files, recipients' copies, clipboard content or any copies held by other apps or storage providers. Manage those separately. QuickQR does not promise encryption for exported QR files or their delivery.</p>
+
+      <h3>4. Automatic consent flow, banners and optional Support</h3>
+      <p>QuickQR uses Google's User Messaging Platform (UMP) and Google Mobile Ads SDK. At startup it automatically requests a consent-information update and shows a consent form when required. Consent services may contact Google; this process does not wait for you to open Support. Where required, the app provides a privacy-choices control to revisit consent options.</p>
+      <p>When UMP indicates that ads can be requested, the app initializes the ads SDK and may load a separate adaptive banner on the Home/Maker screen. Banner loading does not require you to choose the optional Support ad. The app rechecks UMP eligibility before new ad-load paths.</p>
+      <p>The Support screen separately offers an explicit, optional rewarded-interstitial ad with Continue and Not now choices. QR tools are not locked behind ads, and no ad click is required. A cosmetic heart is stored on this device only after a genuine SDK-earned reward and successful local saving; the celebration follows ad dismissal. Choosing not to use Support does not by itself disable the startup consent process or eligible Home banners. Ad availability and serving are not guaranteed.</p>
+
+      <h3>5. Google advertising and consent data</h3>
+      <p>Local QR generation does not mean that the entire app is offline or that no data is collected or shared. According to Google's Mobile Ads SDK disclosure, the SDK collects and shares data for advertising, analytics and fraud prevention, including:</p>
+      <ul>
+        <li>IP address, which may be used to estimate approximate location;</li>
+        <li>Product interactions, such as app launches, taps and video views;</li>
+        <li>Diagnostic information about app/SDK performance, such as launch time, hangs and energy usage;</li>
+        <li>Device and account identifiers, including the Android advertising ID, app set ID and, where applicable, other identifiers related to signed-in accounts.</li>
+      </ul>
+      <p>Actual processing depends on SDK version, consent, region, device settings and applicable ad configuration. The Android app declares Advertising ID permission. You can manage or reset/delete the advertising ID through the controls available on your Android device. Google's SDK disclosure states that the SDK's collected user data is encrypted in transit using TLS; this statement does not extend to QR exports or third-party destinations.</p>
+      <p>Google's processing, storage and user controls are described in the <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a> and <a href="https://www.google.com/intl/en/policies/privacy/">Google Privacy Policy</a>. QuickQR's local delete controls do not delete data held by Google.</p>
+
+      <h3>6. Contact and policy changes</h3>
+      <p>For privacy questions, email <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a>. Do not send Wi-Fi passwords or other sensitive QR payloads with a support request. This policy may be updated when the app or its data practices change; the date above identifies this revision.</p>
+    </section>
+
+    <section id="turkce" lang="tr" aria-labelledby="tr-title">
+      <h2 id="tr-title">Türkçe</h2>
+      <p>Bu politika Android için QuickQR: QR Kod Oluşturucu uygulamasını açıklar. Geliştiriciye <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a> adresinden ulaşabilirsiniz.</p>
+
+      <h3>1. QR içeriği ve kamera kapsamı</h3>
+      <p>QuickQR; girdiğiniz bağlantı, metin ve kişisel Wi-Fi ayarlarından veya uygulamaya paylaşmayı seçtiğiniz düz metinden cihazınızda statik QR kodları üretir. Kodlama ve önizleme yerel olarak yapılır. Uygulama QR içeriğinizi, Wi-Fi şifrenizi veya kayıtlı kod adını reklam isteklerine eklemez. QuickQR bir oluşturucudur; QR tarayıcı veya barkod okuyucu değildir. Android QR araçları kamera erişimi istemez.</p>
+
+      <h3>2. Yerel saklama ve denetimleriniz</h3>
+      <p>QuickQR cihazınızda içerik saklayabilir. Geçmişe kaydetmeyi seçtiğinizde içerik, tür ve oluşturulma zamanı dahil en fazla 100 son kaydı tutar. Adlandırılmış veya sabitlenmiş kayıtlı kodların adı ve içeriği de saklanır. Uygulama bu kayıtlar, Wi-Fi saklama tercihi ve kazanılmış dekoratif kalp için flutter_secure_storage üzerinden korumalı yerel depolama kullanır. Bu, cihazınızı kontrol eden bir kişinin erişimine karşı garanti değildir.</p>
+      <p>Wi-Fi kayıtları ağ adı, şifre, güvenlik türü ve gizli ağ ayarını içerebilir. Varsayılan olarak yalnızca oturumda tutulurlar. Wi-Fi geçmişinin ve adlandırılmış Wi-Fi kodlarının kalıcı saklanması, ayrıca Wi-Fi saklama onayınızı gerektirir. Bu seçeneği kapatmak, sonraki başarılı kaydetmede Wi-Fi girdilerini kalıcı kayıtlardan çıkarır; ekrandaki mevcut taslağı veya oturum girdilerini silmez.</p>
+      <p>Tek bir geçmiş kaydını silmek, geçmişi temizlemek veya adlandırılmış kayıtlı kodları ayrıca silmek için uygulama içi denetimleri kullanın. Geçmişi temizlemek, ayrıca adlandırılmış kodları silmez. Depolama değişiklikleri cihaz depolamasına başarılı yazma gerektirir; uygulama depolama hatalarını bildirir. Geçmiş sınırı 100 kayıttır; belirli bir süre sonunda otomatik silme süresi değildir. QuickQR'da hesap veya bulut QR geçmişi hizmeti yoktur. Android uygulama yedeklemesi, uygulama yapılandırmasında kapalıdır.</p>
+
+      <h3>3. Hassas Wi-Fi kodları, dışa aktarma ve pano</h3>
+      <p>Wi-Fi QR kodunu okuyabilen herkes ağ kimlik bilgilerini elde edebilir. Arayüzde şifreyi gizlemek QR görselini veya içeriğini şifrelemez. Yalnızca alıcılarla paylaşmak istediğiniz bilgileri ekleyin.</p>
+      <p>Android sistem belge seçicisiyle PNG/SVG kaydederken veya sistem paylaşım ekranını kullanırken hedefi ya da alıcı uygulamayı siz seçersiniz. Paylaşma işlemi, paylaşım bileşeninin hazırladığı dosyaları da içerebilir. Seçtiğiniz depolama sağlayıcısı veya alıcı uygulama, içeriği kendi politikasına göre saklayabilir, iletebilir veya eşitleyebilir. İçeriği kopyalamak, varsa Wi-Fi şifresi dahil QR içeriğini sistem panosuna koyar; uygulama Wi-Fi kimlik bilgilerini kopyalamadan önce onay ister.</p>
+      <p>QuickQR geçmişini silmek veya Wi-Fi saklamayı kapatmak dışa aktarılan dosyaları, alıcılardaki kopyaları, pano içeriğini ya da diğer uygulama ve depolama sağlayıcılarındaki kopyaları silmez. Bunları ayrıca yönetin. QuickQR, dışa aktarılan QR dosyalarının veya iletiminin şifreleneceğini taahhüt etmez.</p>
+
+      <h3>4. Otomatik izin akışı, banner ve isteğe bağlı Destek</h3>
+      <p>QuickQR, Google User Messaging Platform (UMP) ve Google Mobile Ads SDK kullanır. Başlangıçta otomatik olarak izin bilgisi güncellemesi ister ve gerektiğinde izin formunu gösterir. İzin hizmetleri Google ile bağlantı kurabilir; bu işlem Destek bölümünü açmanızı beklemez. Gerektiğinde izin seçeneklerini yeniden açmak için uygulamada gizlilik tercihleri denetimi sunulur.</p>
+      <p>UMP reklam istenebileceğini bildirdiğinde uygulama reklam SDK'sını başlatır ve Ana sayfa/Oluştur ekranında ayrı bir uyarlanabilir banner yükleyebilir. Banner yüklemek için isteğe bağlı Destek reklamını seçmeniz gerekmez. Uygulama yeni reklam yükleme yollarından önce UMP uygunluğunu yeniden denetler.</p>
+      <p>Destek ekranı ayrıca Devam ve Şimdi değil seçenekleriyle açıkça seçilen, isteğe bağlı bir ödüllü geçiş reklamı sunar. QR araçları reklamla kilitlenmez ve reklama tıklamak gerekmez. Dekoratif kalp yalnızca gerçek SDK ödül kazanımı ve başarılı yerel kayıt sonrasında bu cihazda saklanır; kutlama reklam kapandıktan sonra görünür. Destek'i kullanmamayı seçmek tek başına başlangıç izin sürecini veya uygun Ana sayfa banner'larını kapatmaz. Reklam bulunması ve sunulması garanti edilmez.</p>
+
+      <h3>5. Google reklam ve izin verileri</h3>
+      <p>QR üretiminin yerel olması, tüm uygulamanın çevrimdışı olduğu veya hiç veri toplanmadığı/paylaşılmadığı anlamına gelmez. Google Mobile Ads SDK açıklamasına göre SDK; reklam, analiz ve sahtekarlığı önleme amaçlarıyla aşağıdakiler dahil verileri toplar ve paylaşır:</p>
+      <ul>
+        <li>Yaklaşık konumu tahmin etmek için kullanılabilen IP adresi;</li>
+        <li>Uygulama açılışları, dokunmalar ve video görüntülemeleri gibi ürün etkileşimleri;</li>
+        <li>Açılış süresi, donma ve enerji kullanımı gibi uygulama/SDK performansına ilişkin teşhis bilgileri;</li>
+        <li>Android reklam kimliği, uygulama kümesi kimliği ve uygulanabildiğinde cihazda oturum açılmış hesaplarla ilgili diğer kimlikler dahil cihaz ve hesap tanımlayıcıları.</li>
+      </ul>
+      <p>Gerçek işleme; SDK sürümü, izin, bölge, cihaz ayarları ve geçerli reklam yapılandırmasına bağlıdır. Android uygulaması Reklam Kimliği iznini bildirir. Reklam kimliğini Android cihazınızdaki kullanılabilir denetimlerle yönetebilir, sıfırlayabilir veya silebilirsiniz. Google'ın SDK açıklaması, SDK'nın topladığı kullanıcı verilerinin aktarım sırasında TLS ile şifrelendiğini belirtir; bu açıklama QR dışa aktarımlarını veya üçüncü taraf hedefleri kapsamaz.</p>
+      <p>Google'ın işleme, saklama ve kullanıcı denetimleri <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK veri açıklamasında</a> ve <a href="https://www.google.com/intl/tr/policies/privacy">Google Gizlilik Politikası'nda</a> açıklanır. QuickQR'ın yerel silme denetimleri Google'ın elindeki verileri silmez.</p>
+
+      <h3>6. İletişim ve politika değişiklikleri</h3>
+      <p>Gizlilik soruları için <a href="mailto:omersukrubektas@gmail.com">omersukrubektas@gmail.com</a> adresine yazın. Destek talebinizle Wi-Fi şifresi veya başka hassas QR içeriği göndermeyin. Uygulama veya veri uygulamaları değiştiğinde bu politika güncellenebilir; yukarıdaki tarih bu sürümü belirtir.</p>
+    </section>
+  </main>
+</body>
+</html>
