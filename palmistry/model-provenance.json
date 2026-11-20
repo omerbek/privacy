@@ -1,0 +1,58 @@
+[
+  {
+    "file": "hand_landmarker.task",
+    "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+    "upstream": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
+    "upstreamSha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+    "matchesOfficial": true,
+    "modelLicense": "Apache-2.0 explicitly stated on official Hand Tracking model card, page 2; commercial redistribution subject to license terms.",
+    "modelCard": "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Hand%20Tracking%20(Lite_Full)%20with%20Fairness%20Oct%202021.pdf",
+    "trainingProvenance": "Model card describes consented mobile AR images, real-world augmentations and GHUM-derived synthetic depth. No training images bundled or independent ownership audit asserted.",
+    "licenseFile": "licenses/mediapipe-Apache-2.0.txt",
+    "modelNotice": "licenses/mediapipe-models-NOTICE.txt",
+    "upstreamBytes": 7819105,
+    "byteMatchDate": "2026-11-20",
+    "licenseReviewDate": "2026-11-20"
+  },
+  {
+    "file": "face_landmarker.task",
+    "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+    "upstream": "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task",
+    "upstreamSha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+    "matchesOfficial": true,
+    "modelLicense": "Apache-2.0 explicitly stated on official detector, Face Mesh V2 and Blendshape V2 model cards, page 1; commercial redistribution subject to license terms.",
+    "modelCards": [
+      "https://storage.googleapis.com/mediapipe-assets/MediaPipe%20BlazeFace%20Model%20Card%20(Short%20Range).pdf",
+      "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20MediaPipe%20Face%20Mesh%20V2.pdf",
+      "https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Blendshape%20V2.pdf"
+    ],
+    "trainingProvenance": "Cards describe consented mobile AR detector images, real-world AR face photos/synthetic depth, and controlled lab multi-view/GHUM generated blendshape data. No training images bundled or independent ownership audit asserted.",
+    "licenseFile": "licenses/mediapipe-Apache-2.0.txt",
+    "modelNotice": "licenses/mediapipe-models-NOTICE.txt",
+    "upstreamBytes": 3758596,
+    "byteMatchDate": "2026-11-20",
+    "licenseReviewDate": "2026-11-20"
+  },
+  {
+    "engine": "original-dark-valley-v2",
+    "source": "src/palm-ridges.js",
+    "trainingData": "None; no weights, pretrained initialization, training photos or third-party filter implementation.",
+    "inputs": "Current submitted RGBA pixels in a 512px crop. MediaPipe joints delimit/align the crop only.",
+    "outputs": "Three uncertain upper/middle/thumb-side dark-crease candidate masks, source-coordinate traces and measured topology. No unsupported pixels filled, no random readings.",
+    "rights": "Original application implementation; retained MIT crop/render glue separately attributed in licenses/palm-code-MIT.txt.",
+    "limitations": "Intensity analysis can confuse shadows/ink/hair or secondary wrinkles with major creases, reject ordinary/merged creases, and does not validate traditional anatomical names. One permitted real palm and its geometric transforms have repository-only pixel diagnostic evidence; all independent rejected fixtures are retained. Learned semantic/continuous-major-line parity, population accuracy and current UI/native verification are not established.",
+    "reviewDate": "2026-11-20",
+    "sourceDiagnosticEvidence": "build/pixel-diagnostics-20261120/photo-evidence.json (repository only; no QA photo is bundled or used for training)",
+    "retiredArtifact": {
+      "name": "palm_lines.onnx / student_fp16.onnx",
+      "sha256": "e2c9f826676b3aaf0a715f3087fcd4fc0b4dccd8c53de05fd26696a8399f8dd6",
+      "upstream": "https://github.com/samuelwbarber/palm-line-reader/tree/bc48939f4deee6d8ff842bfde499396dab9c4830",
+      "distributedByCurrentSource": false,
+      "exactSource": "https://raw.githubusercontent.com/samuelwbarber/palm-line-reader/bc48939f4deee6d8ff842bfde499396dab9c4830/models/student_fp16.onnx",
+      "upstreamSha256": "e2c9f826676b3aaf0a715f3087fcd4fc0b4dccd8c53de05fd26696a8399f8dd6",
+      "upstreamBytes": 11284720,
+      "byteMatchDate": "2026-11-20",
+      "rights": "Not cleared: repository MIT does not establish scraped-photo, subject, teacher or pretrained-weight rights. Removed, not relabeled as cleared."
+    }
+  }
+]
