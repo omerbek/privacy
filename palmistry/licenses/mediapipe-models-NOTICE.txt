@@ -1,0 +1,33 @@
+Google MediaPipe hand/face model attribution
+Reviewed 2026-11-20
+
+These are unmodified official float16 version 1 model bundles published by Google:
+
+hand_landmarker.task
+SHA-256 fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1
+https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task
+Official Hand Tracking Lite/Full model card, page 2, states:
+LICENSED UNDER: Apache License, Version 2.0
+https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Hand%20Tracking%20(Lite_Full)%20with%20Fairness%20Oct%202021.pdf
+
+face_landmarker.task
+SHA-256 64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff
+https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task
+Official component model cards, each page 1, state:
+LICENSED UNDER: Apache License, Version 2.0
+BlazeFace short-range: Valentin Bazarevsky, Yury Kartynnik, Artsiom Ablavatski (Google).
+https://storage.googleapis.com/mediapipe-assets/MediaPipe%20BlazeFace%20Model%20Card%20(Short%20Range).pdf
+Face Mesh V2: Geng Yan, Ivan Grishchenko (Google).
+https://storage.googleapis.com/mediapipe-assets/Model%20Card%20MediaPipe%20Face%20Mesh%20V2.pdf
+Blendshape V2: Ivan Grishchenko, Geng Yan, Andrei Zanfir, Eduard Gabriel Bazavan (Google).
+https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Blendshape%20V2.pdf
+
+The accompanying complete license is mediapipe-Apache-2.0.txt.
+This model-specific evidence is independent of the MediaPipe Tasks Vision SDK license.
+No training photographs are bundled or licensed for redistribution by this notice.
+The app does not use these models for identification, surveillance or life-critical decisions.
+No modifications to the weight bundles, accuracy warranty or independent dataset audit is claimed.
+
+Official solution documentation linking model bundles/cards:
+https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker
+https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker
